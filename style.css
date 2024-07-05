@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.tool-bar {
+    background-color: tomato;
+    display: flex;
+    align-items: right;
+    padding: 1rem;
+}
+
