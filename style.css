@@ -1,12 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 body {
     background-color: antiquewhite;
 }
 
+/* Nav list */
 a {
     color: antiquewhite;
     text-decoration: none;
@@ -18,9 +20,9 @@ a:hover {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
 }
 
 nav {
@@ -28,7 +30,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: tomato;
+    width: 100%;
     height: 8vh;
+    position: fixed;
 }
 
 .nav-list {
@@ -36,7 +40,69 @@ nav {
     display: flex;
     background-color: tomato;
 }
+
 .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+    letter-spacing: 0.25rem;
+    margin-left: 2rem;
+}
+
+
+/* Home */
+.home {
+    display: flex;
+    height: 92vh;
+    padding-top: 8vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentation h1 {
+    font-size: 4rem;
+    font-family: sans-serif;
+    letter-spacing: 0.25rem;
+    color: tomato;
+}
+
+
+/* About */
+.about {
+    display: flex;
+    height: 92vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me p {
+    color: tomato;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 0.25rem;
+}
+
+
+/* Skills */
+.skills {
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    border-radius: 0.5rem;
+    color: antiquewhite;
+}
+
+.skills h2 {
+    border-bottom: 2px solid antiquewhite;
+    margin-bottom: solid 1px;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    font-family: sans-serif;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.skills li {
+    list-style: none;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    font-family: sans-serif;
+    padding: 1rem;
 }
