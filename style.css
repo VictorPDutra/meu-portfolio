@@ -9,12 +9,12 @@ body {
     background-color: antiquewhite;
 }
 
-.standard-section {
+.section {
     display: flex;
-    height: 92vh;
+    height: calc(100vh - 4.5rem);
     align-items: center;
     justify-content: space-around;
-    padding: 8vh 4% 0px
+    padding: 0px 4%;
 }
 
 /* Nav list */
@@ -40,7 +40,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: tomato;
-    height: 8vh;
+    height: 4.5rem;
     width: 100%;
     position: fixed;
 }
@@ -59,6 +59,10 @@ nav {
 
 
 /* Home */
+#home-page {
+    padding-top: 4.5rem;
+}
+
 .apresentation h1 {
     font-size: 4rem;
     font-family: sans-serif;
@@ -71,6 +75,7 @@ nav {
     margin-left: 1rem;
 }
 
+
 /* About */
 .about-me p {
     color: tomato;
@@ -79,8 +84,6 @@ nav {
     margin-left: 1rem;
 }
 
-
-/* Skills */
 .skills {
     width: 300px;
     height: 300px;
@@ -106,8 +109,9 @@ nav {
     padding: 1rem;
 }
 
+
 /* Projects */
-#projects-page h2 {
+#projects-page h2{
     padding: 1rem;
 }
 
@@ -133,4 +137,11 @@ nav {
     margin: 0px 1rem;
     border-radius: 0.5rem;
     text-align: center;
+}
+
+
+/* Contact */
+#contact-page h1 {
+    font-size: 4rem;
+    color: tomato;
 }
