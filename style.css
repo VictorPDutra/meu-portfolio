@@ -164,17 +164,38 @@ header nav a:hover {
 #contact-page {
     justify-content: center;
     align-items: center;
-}
-
-#contact-page .contact-links ul li {
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    letter-spacing: 0.15rem;
-    padding: 1rem;
-}
-#contact-page {
-    font-size: 4rem;
+    font-size: 3rem;
     color: tomato;
     background-color: antiquewhite;
+}
+
+.final-text {
+    margin-right: 1rem;
+}
+
+.contact-links {
+    margin-left: 1rem;
+}
+
+.contact-links ul li {
+    list-style: none;
+    text-align: left;
+    letter-spacing: 0.20rem;
+    padding: 1rem;
+}
+
+.contact-links ul li a {
+    text-decoration: none;
+    color: #0195a0;
+}
+
+
+@media (max-width: 835px) {
+    .section {
+        display: block;
+        height: calc(100vh - 4.5rem);
+        align-items: center;
+        justify-content: center;
+        padding: 0px 4%;
+    }
 }
