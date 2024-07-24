@@ -14,8 +14,18 @@ body {
     display: flex;
     height: calc(100vh - 4.5rem);
     align-items: center;
-    justify-content: space-around;
-    padding: 0px 4%;
+    justify-content: center;
+    /* padding: 0px 4%; */
+    width: 100%;
+}
+
+.home-page {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 4%; */
+    width: 100%; 
 }
 
 /* Nav list */
@@ -26,7 +36,7 @@ header nav {
     background-color: tomato;
     height: 4.5rem;
     width: 100%;
-    padding: 0px 4%;
+    /* padding: 0px 4%; */
     position: fixed;
 }
 
@@ -80,6 +90,7 @@ header nav a:hover {
 /* About */
 #about-page {
     background-color: antiquewhite;
+    justify-content: center;
 }
 
 .about-me p {
@@ -191,11 +202,39 @@ header nav a:hover {
 
 
 @media (max-width: 835px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'OpenSans', sans-serif;
+    }
+
     .section {
-        display: block;
+        flex-direction: column;
         height: calc(100vh - 4.5rem);
         align-items: center;
         justify-content: center;
-        padding: 0px 4%;
+        /* padding: 0px 4%; */
+        min-width: fit-content;
+    }
+    #home-page {
+        height: 100vh;
+    }
+    .apresentation h1 {
+        font-size: 4rem;
+        letter-spacing: 0.20rem;
+        color: #0195a0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-page {
+        flex-direction: column;
+        min-width: fit-content;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        /* padding: 0px 4%; */
+        width: 100%; 
     }
 }
