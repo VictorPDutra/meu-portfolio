@@ -4,20 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio de Victor Dutra</title>
     <link rel="stylesheet" href="style.css">
 
+
+    <script src="https://kit.fontawesome.com/48b227c0c2.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Google Icons -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
     <!-- Google Fonts -->
-    <title>Portifólio de Victor Dutra</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a class="logo" href="#home-page">Victor Dutra</a>
-            <ul class="nav-list">
+            <div class="logo">
+                <h1>Victor Dutra</h1>
+            </div>
+            <span id="hamburguer" class="material-symbols-outlined">menu</span>
+            <ul id="nav-list" class="nav-list">
                 <li><a href="#home-page" class="js-link">Início</a></li>
                 <li><a href="#about-page" class="js-link">Sobre</a></li>
                 <li><a href="#projects-page" class="js-link">Projetos</a></li>
@@ -27,65 +36,92 @@
     </header> <!-- cabecalho -->
 
     <section id="home-page" class="section">
-        <div class="home-page">
-        <div class="apresentation">
-            <h1>Frontend Developer</h1>
+        <div class="container container-home">
+            <div class="apresentation">
+                <h1>Frontend Developer</h1>
+            </div>
+            <div class="perfil-image"><img src="images/foto_perfil.png" alt=""></div>
         </div>
-        <div class="perfil-image"><img src="/images/foto-perfil.png" alt=""></div>
-    </div>
     </section> <!-- home-page -->
 
     <section id="about-page" class="section">
-        <div class="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-            </ul>
-        </div>
-        <div class="about-me">
-            <p>Olá, meu nome é Victor Dutra.</p>
+        <div class="container">
+            <div class="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="about-me">
+                <p>Olá, meu nome é Victor Dutra.</p>
+            </div>
         </div>
     </section> <!-- about-page -->
 
     <section id="projects-page" class="section">
-        <div class="container">
-            <div id="clima-agora" class="box-1">
-                <h2>Clima Agora</h2>
-                <p>Webapp</p>
-            </div>
-            <div id="Currículo" class="box-2">
-                <h2>Currículo</h2>
-                <p> Webapp</p>
-            </div>
-            <div id="Currículo" class="box-3">
-                <h2>Lista de tarefas</h2>
-                <p> Webapp</p>
-            </div>
-            <div id="Meus Links" class="box-4">
-                <h2>Meus Links</h2>
-                <p> Webapp</p>
-            </div>
+        <div class="container container-grid">
+            <ul class="featuredposts-list">
+                <li class="featuredpost-item">
+                    <div class="featuredpost">
+                        <img src="images/clima_agora.png" alt="">
+                        <div class="featuredpost-inner">
+                            <h2 class="project-title">Clima agora</h2>
+                            <a href="https://victorpdutra.github.io/Clima-Agora/" target="_blank" class="featuredpost-link"></a>
+                            <p class="project-description">Descrição do projeto *apresentar com hover</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="featuredpost-item">
+                    <div class="featuredpost">
+                        <img src="images/lista_de_tarefas.png" alt="">
+                        <div class="featuredpost-inner">
+                            <h2 class="project-title">Lista de tarefas</h2>
+                            <a href="https://victorpdutra.github.io/lista-de-tarefas2.0/" target="_blank" class="featuredpost-link"></a>
+                            <p class="project-description">Descrição do projeto *apresentar com hover</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="featuredpost-item">
+                    <div class="featuredpost">
+                        <div class="featuredpost-inner">
+                            <h2 class="project-title">Currículo</h2>
+                            <a href="" class="featuredpost-link"></a>
+                            <p class="project-description">Descrição do projeto *apresentar com hover</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="featuredpost-item">
+                    <div class="featuredpost">
+                        <img src="images/my_links.png" alt="">
+                        <div class="featuredpost-inner">
+                            <h2 class="project-title">Meus links</h2>
+                            <a href="https://victorpdutra.github.io/mylinks/" target="_blank" class="featuredpost-link"></a>
+                            <p class="project-description">Descrição do projeto *apresentar com hover</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section> <!-- projects-page -->
 
     <section id="contact-page" class="section">
-        <div class="final-text">
-            <h1>Vamos trabalhar juntos<span>.</span></h1>
-        </div>
-        <div class="contact-links">
-            <ul>
-                <li><a href="">E-mail</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">GitHub</a></li>
-            </ul>
+        <div class="container">
+            <div class="final-text">
+                <h2>Vamos trabalhar juntos<span>.</span></h2>
+            </div>
+            <div class="contact-links">
+                <ul>
+                    <li><a href="mailto:victorpaulino.dutra@gmail.com" target="_blank" class="contact-pages"><i class="fa-solid fa-envelope contact-icons"></i>E-mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/victor-paulino-dutra-9a60921b8/" target="_blank" class="contact-pages"><i class="fa-brands fa-linkedin contact-icons"></i>Linkedin</a></li>
+                    <li><a href="https://github.com/VictorPDutra" target="_blank" class="contact-pages"><i class="fa-brands fa-github contact-icons"></i>GitHub</a></li>
+                </ul>
+            </div>
         </div>
     </section> <!-- contact-page -->
-
-
-    <script src="/index.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
