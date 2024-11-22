@@ -170,7 +170,7 @@ header nav a:hover {
 
 .featuredpost:hover {
     transform: scale(1.1);
-    transition: .3s;
+    transition-duration: .3s;
 }
 
 .featuredpost-inner {

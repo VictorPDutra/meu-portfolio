@@ -16,15 +16,15 @@ function scrollSection(event) {
     })
 
     let navListMobile = document.querySelector('.nav-list');
-    var largura = window.innerWidth;
-    if (largura < 960) {
+    let largura = window.innerWidth;
+    if (largura <= 960) {
         navListMobile.style.display = 'none'
     };
 
 };
 
 function clickMenuMobile() {
-
+    
     if (navListMobile.style.display == 'none') {
         navListMobile.style.display = 'flex';
     } else {
@@ -32,9 +32,19 @@ function clickMenuMobile() {
     }
 };
 
-mobileMenu.addEventListener('click', clickMenuMobile);
+
+window.addEventListener('resize', () => {
+    
+    let larg = window.innerWidth;
+    if (larg <= 960) {
+        navListMobile.style.display = 'none';
+    }else {
+        navListMobile.style.display = 'flex';
+    }
+});
 
 links.forEach(link => {
     link.addEventListener('click', scrollSection)
 });
 
+mobileMenu.addEventListener('click', clickMenuMobile);
