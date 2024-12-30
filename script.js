@@ -17,7 +17,7 @@ function scrollSection(event) {
 
     let navListMobile = document.querySelector('.nav-list');
     let largura = window.innerWidth;
-    if (largura <= 960) {
+    if (largura <= 660) {
         navListMobile.style.display = 'none'
     };
 
@@ -36,7 +36,7 @@ function clickMenuMobile() {
 window.addEventListener('resize', () => {
     
     let larg = window.innerWidth;
-    if (larg <= 960) {
+    if (larg <= 660) {
         navListMobile.style.display = 'none';
     }else {
         navListMobile.style.display = 'flex';
