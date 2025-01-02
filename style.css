@@ -133,6 +133,8 @@ header nav a:hover {
 
 .featuredposts-list {
   display: grid;
+  align-items: center;
+  justify-items: center;
   grid-template-columns: 400px 400px;
   grid-template-rows: 1fr 1fr;
   gap: 3rem;
@@ -143,71 +145,80 @@ header nav a:hover {
 .featuredpost-item {
   display: block;
   position: relative;
-  height: 350px;
-  width: 400px;
+  width: 350px;
+  height: 300px;
 }
 
 .featuredpost {
   display: block;
-  height: 350px;
-  width: 400px;
-  position: relative;
+  width: 350px;
+  height: 300px;
+  position: absolute;
   background-color: antiquewhite;
-  border-radius: 3rem 6rem;
+  border-radius: 30px;
   overflow: hidden;
-  box-shadow: 14px 14px 60px -10px #0000004d;
-  /* border: 2px solid #00afaf; */
+  box-shadow: -10px 10px 20px -8px #0000004d;
+}
+
+.featuredpost:hover {
+  transform: scale(1.04);
+  transition-duration: 0.4s;
+  box-shadow: -12px 12px 25px -10px #0000004d;
 }
 
 .featuredpost img {
   display: block;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.featuredpost:hover {
-  transform: scale(1.1);
-  transition-duration: 0.3s;
+.featuredpost:hover img {
+  filter: blur(4px);
 }
 
 .featuredpost-inner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  border-radius: 0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.8px;
+  opacity: 0;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 30px;
+  transition-duration: 0.4s;
 }
 
-.featuredpost-inner h2 {
-  color: #fff;
-  background-color: tomato;
-  position: relative;
-  justify-content: end;
+.featuredpost:hover .featuredpost-inner {
+  opacity: 1;
+  background-color: rgba(54, 54, 54, 0.35);
 }
 
 .project-title {
-  margin: 1rem 0;
   text-align: center;
-  font-weight: 600;
-}
-
-.featuredpost-link {
-  overflow-wrap: break-word;
-  hyphens: auto;
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  font-size: 2em;
 }
 
 .project-description {
-  margin-top: 6rem;
-  padding: 1rem;
+  padding: 0 40px;
+  font-size: 1.2em;
   text-align: center;
-  color: black;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.technologies span {
+  font-size: 1em;
+  background-color: tomato;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* Contact */
