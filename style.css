@@ -64,6 +64,11 @@ header nav a:hover {
   border-bottom: 1px solid antiquewhite;
 }
 
+.actived {
+  padding-bottom: 3px;
+  border-bottom: 1px solid antiquewhite;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -92,17 +97,25 @@ header nav a:hover {
   background-color: antiquewhite;
 }
 
+.about-me h2 {
+  color: tomato;
+  font-size: 32px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
 .about-me p {
   color: tomato;
-  font-size: 2rem;
-  letter-spacing: 0.25rem;
+  font-size: 20px;
+  letter-spacing: 0.08rem;
+  margin-bottom: 10px;
 }
 
 .skills {
-  width: 300px;
-  height: 300px;
-  margin-right: 5rem;
-  border-radius: 0.5rem;
+  width: 250px;
+  height: 420px;
+  margin-right: 4.5rem;
+  border-radius: 16px;
   background-color: tomato;
   color: antiquewhite;
   box-shadow: 14px 14px 60px -10px #3d1e1093;
@@ -112,16 +125,18 @@ header nav a:hover {
   border-bottom: 2px solid antiquewhite;
   margin-bottom: solid 1px;
   text-align: center;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   padding: 1rem;
   text-transform: uppercase;
 }
 
 .skills li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   list-style: none;
-  text-align: center;
   letter-spacing: 0.15rem;
-  padding: 1rem;
+  padding: 12px 32px;
 }
 
 /* Projects */
@@ -129,6 +144,7 @@ header nav a:hover {
   height: 100%;
   width: 100%;
   justify-content: center;
+  padding: 0;
 }
 
 .featuredposts-list {
@@ -272,7 +288,6 @@ header nav a:hover {
     justify-content: center;
     height: calc(100vh - 3.5rem);
     align-items: center;
-    padding: 0px 1%;
     width: 100vw;
   }
 
@@ -304,11 +319,49 @@ header nav a:hover {
   /* About */
   .about-me {
     text-align: center;
-    margin-top: 7.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .about-me h2 {
+    color: tomato;
+    font-size: 28px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 20px;
+  }
+
+  .about-me p {
+    color: tomato;
+    font-size: 18px;
+    letter-spacing: 0.08rem;
+    margin-bottom: 10px;
   }
 
   .skills {
+    width: auto;
+    height: auto;
     margin-right: 0rem;
+  }
+
+  .skills h2 {
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  .skills ul {
+    display: flex;
+  }
+
+  .skills li {
+    padding: 14px 10px;
+  }
+
+  .container-skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .text-tech {
+    display: none;
   }
 
   /* Projects */
@@ -320,6 +373,7 @@ header nav a:hover {
     overflow-y: auto;
     justify-content: start;
   }
+
   .featuredposts-list {
     display: block;
     padding: 0;

@@ -40,6 +40,7 @@ mobileMenu.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     
     let larg = window.innerWidth;
+
     if (larg <= 660) {
         navListMobile.style.display = 'none';
     }else {
