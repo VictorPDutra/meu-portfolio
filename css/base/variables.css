@@ -1,0 +1,10 @@
+:root {
+  --primary-color: tomato;
+  --secondary-color: #0195a0;
+  --background-color: antiquewhite;
+  --text-color: antiquewhite;
+  --header-height: 4.5rem;
+  --container-width: 1200px;
+  --border-radius: 30px;
+  --transition-duration: 0.4s;
+}

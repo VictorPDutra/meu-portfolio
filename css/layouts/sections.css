@@ -1,0 +1,21 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+}
+
+#home-page {
+  height: 100vh;
+}
+
+#about-page {
+  background-color: var(--background-color);
+}
+
+#contact-page {
+  align-items: center;
+  font-size: 3rem;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}

@@ -1,0 +1,98 @@
+.container-grid {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+  animation-duration: 2s;
+  animation-name: scale;
+}
+
+.featuredposts-list {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  padding: 3rem 1rem;
+  height: 100%;
+}
+
+.featuredpost-item {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 300px;
+}
+
+.featuredpost {
+  display: block;
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  background-color: var(--text-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: -10px 10px 20px -8px #0000004d;
+}
+
+.featuredpost:hover {
+  transform: scale(1.04);
+  transition-duration: var(--transition-duration);
+  box-shadow: -12px 12px 25px -10px #0000004d;
+}
+
+.featuredpost img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.featuredpost:hover img {
+  filter: blur(4px);
+}
+
+.featuredpost-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  color: #fff;
+  letter-spacing: 0.8px;
+  opacity: 0;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  transition-duration: var(--transition-duration);
+}
+
+.featuredpost:hover .featuredpost-inner {
+  opacity: 1;
+  background-color: rgba(54, 54, 54, 0.35);
+}
+
+.project-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.project-description {
+  padding: 0 40px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.technologies span {
+  font-size: 1em;
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+}

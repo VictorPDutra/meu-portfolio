@@ -1,0 +1,50 @@
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: var(--header-height);
+  width: 100%;
+  padding: 0px 4%;
+  position: fixed;
+  z-index: 200;
+}
+
+.logo h1 {
+  font-weight: 300;
+  color: var(--text-color);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+#hamburguer {
+  display: none;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header nav a:hover {
+  transition: var(--transition-duration);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.actived {
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  background-color: var(--primary-color);
+}
+
+.nav-list li {
+  letter-spacing: 0.25rem;
+  margin-left: 2rem;
+}
